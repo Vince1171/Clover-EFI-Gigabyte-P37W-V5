@@ -1,6 +1,6 @@
 # Clover EFI Gigabyte P37W V5
 
-Clover directory for Gigabyte laptop P37W-V5
+Clover folder for Gigabyte laptop P37W-V5
 
 
 # Compatibility
