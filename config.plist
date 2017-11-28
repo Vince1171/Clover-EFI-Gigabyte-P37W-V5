@@ -389,6 +389,20 @@
 		<dict>
 			<key>Entries</key>
 			<array>
+            <dict>
+                <key>Disabled</key>
+                <false/>
+                <key>Ignore</key>
+                <false/>
+                <key>Path</key>
+                <string>\EFI\RemixOS\grubx64.efi</string>
+                <key>Title</key>
+                <string>RemixOS</string>
+                <key>Type</key>
+                <string>All</string>
+                <key>VolumeType</key>
+                <string>Internal</string>
+            </dict>
 				<dict>
 					<key>Disabled</key>
 					<false/>
