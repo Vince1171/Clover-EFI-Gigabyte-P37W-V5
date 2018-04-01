@@ -252,15 +252,17 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 darkwake=0 nv_disable=1 kext-dev-mode=1</string>
+		<string>dart=0 nv_disable=1 darkwake=0 USBLegacyOff=Yes npci=0x2000 USBBusFix=Yes kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
-		<string>MacOS</string>
+		<string>LastBootedVolume</string>
+		<key>HibernationFixup</key>
+		<false/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>0</integer>
+		<integer>10</integer>
 		<key>XMPDetection</key>
 		<false/>
 	</dict>
@@ -365,7 +367,9 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>0</integer>
+			<string>99</string>
+			<key>ResetHDA</key>
+			<true/>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -389,20 +393,20 @@
 		<dict>
 			<key>Entries</key>
 			<array>
-            <dict>
-                <key>Disabled</key>
-                <false/>
-                <key>Ignore</key>
-                <false/>
-                <key>Path</key>
-                <string>\EFI\RemixOS\grubx64.efi</string>
-                <key>Title</key>
-                <string>RemixOS</string>
-                <key>Type</key>
-                <string>All</string>
-                <key>VolumeType</key>
-                <string>Internal</string>
-            </dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\RemixOS\grubx64.efi</string>
+					<key>Title</key>
+					<string>RemixOS</string>
+					<key>Type</key>
+					<string>All</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
 				<dict>
 					<key>Disabled</key>
 					<false/>
@@ -433,8 +437,14 @@
 		</array>
 		<key>Mouse</key>
 		<dict>
+			<key>DoubleClick</key>
+			<integer>500</integer>
 			<key>Enabled</key>
+			<true/>
+			<key>Mirror</key>
 			<false/>
+			<key>Speed</key>
+			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
 		<dict>
@@ -513,6 +523,8 @@
 				<data>
 				AAAgAgAAUAE=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
@@ -529,6 +541,8 @@
 				<data>
 				g32MEA==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>MatchOS</key>
 				<string>10.13.x</string>
 				<key>Name</key>
@@ -547,6 +561,8 @@
 				<data>
 				AAAIAAIAAACYAAAAAQUJAAAEAAA=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
@@ -558,11 +574,13 @@
 				<key>Comment</key>
 				<string>Patching 11d41984 with 10ec0255 codec (patched by AppleHDA Patcher.app)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				hBnUEQ==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
@@ -579,6 +597,8 @@
 				<data>
 				ChMDAAAABgAAAAAAAAAAAA==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
@@ -595,6 +615,8 @@
 				<data>
 				CgsDAAAHBgADAAAABAAAAA==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
