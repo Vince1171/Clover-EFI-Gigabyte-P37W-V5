@@ -460,16 +460,22 @@
 					<string>Windows</string>
 				</dict>
 				<dict>
+					<key>Arguments</key>
+					<string>initrd=/initramfs-linux.img root=UUID=370CCE5C-DBD5-417C-ABB6-6860659C42A7  i8042.kbdreset=1 acpi_osi=! acpi_osi=\"Windows 2009\"</string>
 					<key>Disabled</key>
 					<false/>
+					<key>FullTitle</key>
+					<string>Linux Mint</string>
 					<key>Ignore</key>
 					<false/>
-					<key>Title</key>
-					<string>Linux</string>
+					<key>Path</key>
+					<string>vmlinuz-linux</string>
 					<key>Type</key>
 					<string>Linux</string>
-                    <key>AddArguments</key>
-                    <string>i8042.kbdreset=1 acpi_osi=! acpi_osi=\"Windows 2009\"</string>
+					<key>Volume</key>
+					<string>EB3B99FF-DA88-435F-B73B-0CD8122BB5FA</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
 				</dict>
 			</array>
 		</dict>
