@@ -215,6 +215,34 @@
 					SUdQVQhfQURSDAAAAgA=
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC1 to EH01</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC2 to EH02</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMg==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -369,7 +397,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>99</string>
+			<integer>99</integer>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -431,6 +459,18 @@
 					<key>Type</key>
 					<string>Windows</string>
 				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+					<key>Title</key>
+					<string>Linux</string>
+					<key>Type</key>
+					<string>Linux</string>
+                    <key>AddArguments</key>
+                    <string>i8042.kbdreset=1 acpi_osi=! acpi_osi=\"Windows 2009\"</string>
+				</dict>
 			</array>
 		</dict>
 		<key>Hide</key>
@@ -440,7 +480,7 @@
 		<key>Mouse</key>
 		<dict>
 			<key>DoubleClick</key>
-			<integer>500</integer>
+			<integer>0</integer>
 			<key>Enabled</key>
 			<true/>
 			<key>Mirror</key>
@@ -452,6 +492,8 @@
 		<dict>
 			<key>Entries</key>
 			<true/>
+			<key>Kernel</key>
+			<string>MostRecent</string>
 			<key>Legacy</key>
 			<false/>
 			<key>Linux</key>
@@ -459,6 +501,8 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
+		<key>ScreenResolution</key>
+		<string>1920x1080</string>
 		<key>Theme</key>
 		<string>black_green</string>
 	</dict>
@@ -985,7 +1029,7 @@
 		<key>CustomUUID</key>
 		<string>46474142-3432-3030-3034-310000000000</string>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 	</dict>
 </dict>
 </plist>
